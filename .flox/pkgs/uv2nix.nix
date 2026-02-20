@@ -20,9 +20,9 @@ stdenv.mkDerivation {
   dontConfigure = true;
 
   installPhase = ''
-    mkdir -p $out
-    cp default.nix $out/
-    cp -r lib $out/
+    mkdir -p $out/uv2nix
+    cp default.nix $out/uv2nix/
+    cp -r lib $out/uv2nix/
   '';
 
   meta = {
